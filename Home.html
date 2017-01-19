@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UCD's ACM Chapter</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <header class="container">
+    <div class="row">
+      <h1 >UCD's ACM Chapter</h1>
+
+
+
+    </div>
+  </header>
+  <section class="jumbotron">
+    <div class="container">
+      <div class="row text-center">
+        <h2>Association for Computer Machinery</h2>
+        <h3>University of Colorado @ Denver 2017 chapter</h3>
+      </div>
+    </div>
+  </section>
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Events')">Events</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Contact')">Contact</a></li>
+</ul>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Come be a part of your local ACM chapter here at UCD!</p>
+</div>
+
+<div id="Events" class="tabcontent">
+  <h3>Events</h3>
+  <p>Upcoming events for this semester are currently in the works!</p> 
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Don't be afraid to contact us at 'ucd.acm@gmail.com'</p>
+</div>
+
+<script>
+	function openCity(evt, cityName) {
+		// Declare all variables
+		var i, tabcontent, tablinks;
+
+		// Get all elements with class="tabcontent" and hide them
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+
+		// Get all elements with class="tablinks" and remove the class "active"
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+
+		// Show the current tab, and add an "active" class to the link that opened the tab
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+		
+
+	}
+	
+	document.getElementById("defaultOpen").click();
+</script>
+  
+  
+  
+<footer class="container">
+  <div class="row">
+        <p class="col-sm-4">
+          &copy; 2017 UCD's ACM Chapter
+    </p>
+    <ul class="col-sm-8">
+  <li class="col-sm-1"> <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg"></li>
+    </ul>
+  </div>
+  </footer>
+  
+
+</body>
+</html>
