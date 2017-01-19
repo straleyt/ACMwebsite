@@ -3,8 +3,8 @@
 basic skeleton for ACM website
 
 should add?
--message board
--news section
--more information in general
--CU and ACM logo
--
+1. message board
+2. news section
+3. more information in general
+4. CU and ACM logo
+5. 
